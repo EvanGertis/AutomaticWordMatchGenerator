@@ -1,0 +1,15 @@
+.editor {
+    font-family: monospace; 
+    background-color: white; 
+    border: 1px solid #f6912f; 
+    font-weight: normal; 
+    font-size: 96%; 
+    margin-top: 0px;
+    width:100%; 
+    height: auto;
+    margin: 0 auto;
+}
+
+.answers {
+    list-style-type: lower-latin;
+}

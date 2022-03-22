@@ -1,0 +1,1 @@
+INSERT INTO TestExercise.exercise (id,chapter_id,exercise,answer,question,one,two,three,has_visualization) VALUES (3,1,'DFS.PNG',2,'What will be the order of traversal for BFS for the given tree?','1->2->6->7->8->3->9->12->4->5->10->11->13->14','1->2->3->4->5->6->7->8->9->10->11->12->13->14','1->2->7->8->9->3->10->11->6->12->13->14->15->4->5',1);

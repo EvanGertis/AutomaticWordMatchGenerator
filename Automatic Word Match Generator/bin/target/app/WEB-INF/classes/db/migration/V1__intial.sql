@@ -1,0 +1,28 @@
+CREATE TABLE USER(
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(64),
+    password VARCHAR(64)
+);
+
+CREATE TABLE ACCOUNT(
+    id INT NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    billing_address VARCHAR(128),
+    zip_code MEDIUMINT (5) UNSIGNED ZEROFILL,
+    phone_number VARCHAR(10),
+    PRIMARY KEY(id),
+    FOREIGN KEY (user_id) REFERENCES USER(id)
+);
+
+CREATE TABLE BOOKS(
+    id INT NOT NULL AUTO_INCREMENT,
+    account_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(account_id) REFERENCES ACCOUNT(account_id) 
+);
+
+CREATE TABLE EXERCISES(
+    id INT NOT NULL AUTO_INCREMENT,
+    exercise TEXT,
+    answer TEXT
+);
