@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ include file="header.jsp" %>
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -113,3 +113,4 @@ $(function() {
    </body>
 </html>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+<%@ include file="footer.jsp" %>
