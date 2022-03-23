@@ -19,5 +19,8 @@
 *.tar.gz
 *.rar
 
+# word match files
+src/main/webapp/view/word_match*.jsp
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
