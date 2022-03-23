@@ -316,7 +316,7 @@
             else{
                 console.log(xhr.status)
                 console.log(xhr.response)
-                console.log("content was not save successfully");
+                console.log("content was not saved successfully");
             }
         }
         console.log('{"content":\"'
