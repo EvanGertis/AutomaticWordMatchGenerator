@@ -15,7 +15,7 @@ import lombok.Data;
 
 
 @Entity
-@Table(name="visualization")
+@Table(name="WordMatch")
 @Data
 public class WordMatch {
 

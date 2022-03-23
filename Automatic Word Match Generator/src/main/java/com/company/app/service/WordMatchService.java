@@ -66,7 +66,8 @@ public class WordMatchService {
 		try {
 			File file = new File("./src/main/webapp/view/word_match0.jsp");
 			logger.info("Decoding String");
-			String cleanedHTML = wordMatch.toString().replace("WordMatch(content=","").replace(")","");
+			// String cleanedHTML = wordMatch.toString().replace("WordMatch(content=","").replace(")","");
+			String cleanedHTML = wordMatch.getContent().toString();
 			logger.info(cleanedHTML);
 			byte[] decodedBytes = Base64.getDecoder().decode(cleanedHTML.getBytes());
 			String html = new String(decodedBytes, "UTF-8");
@@ -99,7 +100,8 @@ public class WordMatchService {
 				FileWriter myWriter = new FileWriter(JSPfileName);
 				// Saving wordMatch to database
 				wordMatch.setId(parsedInt);
-				wordMatchRepository.save(wordMatch);
+				// TODO: fix  Data truncation: Data too long for column 'content' at row 1
+				// wordMatchRepository.save(wordMatch);
 				// 
 				myWriter.write(html);
 				myWriter.close();
